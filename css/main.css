@@ -1,0 +1,1666 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+.clearboth{
+    clear: both;
+}
+
+.no-top-border{
+    border-top: 0px !important;
+}
+
+.display-block{
+    display: block;
+}
+
+.margin-left-zero{
+    margin-left: 0px !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+/* custom css changes */
+
+.logo {
+    margin: 5px 0px 0px 15px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: left;
+    padding: 9px 10px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-right-width: 0px;
+    margin: 0px 0px 0px 0px; 
+    padding-bottom: 8px;
+}
+
+.navbar-toggle{
+    padding: 8px 5px;
+}
+
+.navbar-toggle .icon-bar{
+    width: 18px;
+    margin-top: 2px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 34px;
+    padding: 9px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0px 0px 0px -2px;
+    margin-top: 0px;
+    border: 1px solid #ddd;
+    border-left-width: 0px;
+    padding-bottom: 0px;
+    padding-top: 6px;
+}
+
+.navbar-brand{
+    padding: 7px 5px;
+    font-size: 14px;
+}
+
+.navbar-top-links li a {
+    padding: 5px 15px;
+    min-height: 40px;
+}
+
+.navbar-top-links li a{
+    padding: 5px 8px;
+}
+
+.navbar-top-links .count-info{
+    padding-top: 6px;
+}
+
+.navbar-top-links .language{
+    padding-top: 8px;
+}
+
+.navbar-top-links .user-dropdown{
+    padding: 5px;
+}
+
+.nav-user-photo {
+    margin: -4px 8px 0 0;
+    border-radius: 100%;
+    border: 2px solid #FFF;
+    max-width: 40px;
+    width: 36px;
+    height: 36px;
+}
+
+.user-info {
+    max-width: 100px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+    top: 6px;
+}
+
+.count-info .label {
+    line-height: 12px;
+    padding: 2px 5px;
+    position: absolute;
+    right: 7px;
+    top: 0px;
+}
+
+.count-info .label{
+    right: 3px;
+    top: 2px;
+}
+
+.fa-bell:before {
+    content: "\f0a2";
+}
+
+
+
+/* header part css code start here */
+
+.project-filter{
+    margin-left: 15px;
+}
+
+/* header part css code end here */
+
+/* Tab's top header css part code start here  */
+
+.details-header-view {
+    margin-right: 0px;
+    margin-left: 0px;
+    background: #f5f5f5;
+    padding: 15px 0px;
+}
+
+.dashboard-action{
+    margin-left: 10px;
+}
+
+.dashboard-action:first-child{
+    margin-left: 0px;
+}
+
+.dashboard-name{
+    margin: 0px;
+    margin-top: 8px;
+    font-size: 1.5em;
+}
+
+.details-header-view .pager{
+    margin: 0px;
+    margin-top: 2px;
+}
+
+@media only screen and (min-width: 1601px){
+    .details-header-view .pager{
+        margin: 0px;
+        margin-left: 10%;
+        margin-top: 2px;
+    }
+}
+
+/* Tab's top header css part code end here */
+
+/* Dashboard tab action css code start here */ 
+
+.dashboard-action .dropdown-menu{
+    padding: 10px;
+    left: 80px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.add-gadget .pager {
+    clear: both;
+    margin-left: 0px;
+}
+
+.add-gadget .list-group {
+    clear: both;
+    padding-top: 10px;
+}
+
+.add-gadget .col-lg-4 {
+    padding: 0px;
+}
+
+.add-gadget img{
+    width: 150px;
+    margin-top: 7px;
+    height: 100px;
+}
+
+.add-gadget p {
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.pager li>a.active {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+.switch-dashboard .dropdown-menu {
+    left: 216px;
+    width: 300px;
+}
+
+.dashboard-action h3 {
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.create-dashboard .dropdown-menu {
+    left: 306px;
+    width: 650px;
+}
+
+.dashboard-form .form-group{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.dashboard-form label {
+    width: 150px;
+    float: left;
+    margin-top: 6px;
+}
+
+.dashboard-form .form-control{
+    float: left;
+    display: inline-block;
+    width: 76%;
+}
+
+.form-footer {
+    padding-top: 5px;
+}
+
+.seprator {
+    position: absolute;
+    bottom: 52px;
+    border-top: 1px solid #d3d3d3;
+    width: 100%;
+    left: 0px;
+}
+
+.clone-dashboard .dropdown-menu {
+    left: 397px;
+    width: 650px;
+}
+
+.manage-dashboard .dropdown-menu {
+    left: 482px;
+    width: 450px;
+}
+
+.manage-dashboard .dashboard-details{
+    width: 100%;
+}
+
+.float-list .list-group-item {
+    position: static;
+    clear: both;
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+
+.add-gadget .list-group-item{
+    padding: 10px 0px;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url("../img/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+.icon-home {
+    background-position: 0 -24px;
+}
+
+.icon-edit {
+    background-position: -96px -72px;
+}
+
+.icon-file {
+    background-position: -24px -24px;
+}
+
+.icon-trash {
+    background-position: -456px 0;
+}
+
+/* Dashboard tab action css code end here */
+
+/* Recent count for files published and forms created start here*/
+
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-right: 1px solid #d2d6de;
+    border-left: 1px solid #d2d6de;
+    border-bottom: 1px solid #d2d6de;
+}
+
+.box.box-primary {
+    border-top-color: #3c8dbc;
+}
+
+.box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+
+.box-header.with-border {
+    border-bottom: 1px solid #e7eaec;
+}
+
+.box-header>.fa, .box-header>.glyphicon, .box-header>.ion, .box-header .box-title {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+}
+
+.box-header>.box-tools {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.btn-box-tool {
+    padding: 5px;
+    font-size: 12px;
+    background: transparent;
+    color: #97a0b3;
+}
+
+/*.btn {
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+}*/
+
+.box-header:before, .box-body:before, .box-footer:before, .box-header:after, .box-body:after, .box-footer:after {
+    content: " ";
+    display: table;
+}
+
+.box-body>.table {
+    margin-bottom: 0;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    /* border-top: 1px solid #ddd; */
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+     border-top: none; 
+}
+
+.table-header-center{
+    text-align: center;
+}
+
+.td-label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.table-td-cell-center{
+    text-align: center;
+}
+
+.widget-item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget-item-list-in-box>.item {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+}
+
+.widget-item-list>.item:before, .widget-item-list>.item:after {
+    content: " ";
+    display: table;
+}
+
+.widget-item-list .product-img {
+    float: left;
+}
+
+.widget-item-list .product-info {
+    margin-left: 60px;
+}
+
+.widget-item-list .product-title {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.widget-item-list .product-description {
+    display: block;
+    color: #999;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+
+.widget-item-list>.item:after {
+    clear: both;
+}
+
+.widget-item-list .label {
+    position: absolute;
+    top: -2px;
+    left: 23px;
+}
+
+.fav-models li.item {
+    padding: 10px 0px;
+}
+
+.fav-models .product-img img{
+    height: 70%;
+    width: 85%;
+}
+
+.panel-body {
+    padding: 0px;
+    padding-top: 5px;
+}
+
+.panel-body .data-row {
+    padding: 10px;
+    border-bottom: 1px solid #d3d3d3;
+    float: left;
+    width: 100%;
+}
+
+.panel-body .feed-element {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.panel-body .breadcrumb {
+    padding: 1px 10px;
+}
+
+.panel-body .doc-size {
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.panel-body .userimg {
+    height: 32px !important;
+    width: 32px !important;
+}
+
+
+
+.panel-body .date-time {
+    font-size: 12px;
+    margin-top: 9px;
+    margin-left: 15px;
+}
+
+/* Recent count for files published and forms created end here */
+
+/* File's tab css code start here */
+
+.folder-view, .file-list{
+    margin-top: 10px;
+    padding: 0px;
+    
+}
+
+.folder-view{
+    transition-duration: 0.8s;
+}
+
+.file-view-mode-open .file-list-header-right-side,
+.file-view-mode-open .html5buttons.filter-button-container{
+    display: none;
+}
+
+.file-view-mode-open .ibox-content{
+    border: none;
+    padding: 0px;
+}
+
+.folder-view.close{
+    margin-left: -300px;
+    /*left: -300px;*/
+}
+
+.treeview .folder-title{
+    width: 100%;
+    border-radius: 0px;
+    padding: 6px 12px;
+    font-weight: bold;
+    height: 42px;
+}
+
+.ibox {
+  clear: both;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+.ibox.collapsed .ibox-content {
+  display: none;
+}
+.ibox.collapsed .fa.fa-chevron-up:before {
+  content: "\f078";
+}
+.ibox.collapsed .fa.fa-chevron-down:before {
+  content: "\f077";
+}
+.ibox:after,
+.ibox:before {
+  display: table;
+}
+.ibox-title {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #ffffff;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 3px 0 0;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 5px 0px 7px;
+  min-height: 42px;
+}
+
+.ibox-title h5 {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 7px;
+    padding: 0;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.ibox-tools {
+    display: block;
+    margin-top: 0px;
+    float: right;
+    padding: 0px 10px 0px 0px;
+    text-align: right;
+}
+
+.ibox-tools a {
+    cursor: pointer;
+    margin-left: 5px;
+    color: #c4c4c4;
+    font-size: 20px;
+}
+
+.ibox-content {
+  background-color: #ffffff;
+  color: inherit;
+  padding: 5px 0px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0;
+  clear: both;
+}
+
+.maximize-content{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: 10000;
+    margin-top: 0px;
+    height: 100%;
+    background: #fff;
+}
+
+.ibox-footer {
+  color: inherit;
+  border-top: 1px solid #e7eaec;
+  font-size: 90%;
+  background: #ffffff;
+  padding: 10px 15px;
+}
+
+.dataTables_length {
+    float: right;
+    margin-right: 10px;
+    margin-top: -1px;
+}
+
+.dataTables_length label {
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.dataTables_length select {
+    display: inline;
+    width: auto;
+    padding: 5px;
+    margin-left: 5px;
+    height: auto;
+}
+
+.breadcrumb{
+    background: none;
+    margin-bottom: 0px;
+    padding: 5px 10px;
+}
+
+.record-counter{
+    font-size: 12px;
+}
+
+.customize-option {
+    margin-top: -1px;
+    margin-right: 5px;
+}
+
+.customize-option button {
+    padding: 4px 12px;
+}
+
+.filter-button-container {
+    float: left;
+    width: 100%;
+    /*padding-bottom: 10px;*/
+    padding: 0px 10px;
+    background: #fff;
+}
+
+.treeview .box {
+    margin-bottom: 0px;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+.treeview .box-header.with-border {
+    border-bottom: none;
+    padding-bottom: 9px;
+}
+
+.treeview h3.box-title {
+    font-size: 14px;
+}
+
+.view-grid, .view-thumb {
+    padding: 0px 10px;
+    padding-top: 10px;
+}
+
+.view-grid table{
+    font-size: 12px;
+}
+
+.outlook-view {
+    border-top: 1px solid #e7eaec;
+    border-bottom: 1px solid #e7eaec;
+}
+
+.outlook-view {
+    transition-duration: 0.8s;
+}
+
+    /* Checkbox custom css code start here */
+
+    /* iCheck plugin Square skin, green
+    ----------------------------------- */
+    .icheckbox_square-green,
+    .iradio_square-green {
+        display: inline-block;
+        *
+        display: inline;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        width: 22px;
+        height: 22px;
+        background: url(http://webapplayers.com/inspinia_admin-v2.5/css/plugins/iCheck/green.png) no-repeat;
+        border: none;
+        cursor: pointer;
+    }
+
+    .icheckbox_square-green {
+        background-position: 0 0;
+    }
+    .icheckbox_square-green.hover {
+        background-position: -24px 0;
+    }
+    .icheckbox_square-green.checked {
+        background-position: -48px 0;
+    }
+    .icheckbox_square-green.disabled {
+        background-position: -72px 0;
+        cursor: default;
+    }
+    .icheckbox_square-green.checked.disabled {
+        background-position: -96px 0;
+    }
+
+    .iradio_square-green {
+        background-position: -120px 0;
+    }
+    .iradio_square-green.hover {
+        background-position: -144px 0;
+    }
+    .iradio_square-green.checked {
+        background-position: -168px 0;
+    }
+    .iradio_square-green.disabled {
+        background-position: -192px 0;
+        cursor: default;
+    }
+    .iradio_square-green.checked.disabled {
+        background-position: -216px 0;
+    }
+
+    /* HiDPI support */
+    @media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+        .icheckbox_square-green,
+        .iradio_square-green {
+            background-image: url(green@2x.png);
+            -webkit-background-size: 240px 24px;
+            background-size: 240px 24px;
+        }
+    }
+
+    /* Checkbox custom css code end here */
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #e7eaec;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+table{
+    color: #676a6c;
+    margin-bottom: 0px;
+}
+
+.pagination{
+    left: 50%;
+    position: relative;
+    margin-left: -166.5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.theme-config {
+  position: absolute;
+  top: 110px;
+  right: 0;
+  overflow: hidden;
+}
+
+.theme-config span.nav-label {
+    margin-left: 10px;
+}
+
+.theme-config .navbar-default{
+    background: #2f4050;
+}
+
+.theme-config .navbar-default .nav > li > a:hover, 
+.theme-config .navbar-default .nav > li > a:focus {
+    background-color: #293846;
+    color: white;
+}
+
+.theme-config-box {
+  margin-right: -220px;
+  position: relative;
+  z-index: 2000;
+  transition-duration: 0.8s;
+}
+
+.theme-config-box.open{
+    margin-right: 0px;
+}
+
+.theme-config-box.show {
+  margin-right: 0;
+}
+.spin-icon {
+  /*background: #1ab394;*/
+  background: #2f4050;
+  position: absolute;
+  padding: 7px 10px 7px 13px;
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  width: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+.skin-setttings {
+  width: 220px;
+  margin-left: 40px;
+  background: #f3f3f4;
+}
+.skin-setttings .title {
+  background: #efefef;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+.setings-item {
+  padding: 10px 30px;
+}
+.setings-item.skin {
+  text-align: center;
+}
+.setings-item .switch {
+  float: right;
+}
+.skin-name a {
+  text-transform: uppercase;
+}
+.setings-item a {
+  color: #fff;
+}
+
+
+.userimg {
+    height: 20px!important;
+    width: 20px!important;
+    float: left;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+.theme-config .navbar-static-side, .theme-config .nav-header, .theme-config li.active, .theme-config #page-wrapper, .theme-config .footer {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.theme-config .nav-header {
+    transition: all 0.4s;
+}
+
+.theme-config .nav>li {
+    position: relative;
+    display: block;
+}
+
+.theme-config .nav > li > a {
+    color: #a7b1c2;
+    font-weight: 600;
+    /*padding: 14px 20px 14px 25px;*/
+}
+
+.theme-config .nav-header {
+    padding: 33px 25px;
+    background: url("patterns/header-profile.png") no-repeat;
+}
+
+.theme-config .nav-second-level li, .theme-config .nav-third-level li {
+    border-bottom: none !important;
+}
+
+.theme-config .nav>li {
+    position: relative;
+    display: block;
+}
+
+.theme-config .nav-second-level li a {
+    padding: 7px 10px 7px 10px;
+    padding-left: 52px;
+}
+
+.theme-config .metismenu .arrow {
+    float: right;
+    line-height: 1.42857;
+}
+
+.theme-config .metismenu .active > a > .fa.arrow:before {
+    content: "\f107";
+}
+
+.theme-config .metismenu .fa.arrow:before {
+    content: "\f104";
+}
+    
+/* File's tab css code end here */
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+    -o-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: height,visibility;
+    -o-transition-property: height,visibility;
+    transition-property: height,visibility;
+}
+
+.metismenu .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+}
+
+
+
+/* outlook view css code start here */
+
+.outlook-view .fh-column {
+    background: #fff;
+    height: 100%;
+    width: 240px;
+    float: left;
+}
+
+.outlook-view .list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.outlook-view .list-group-item {
+    background-color: inherit;
+    border: 1px solid #e7eaec;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.outlook-view .list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.outlook-view .elements-list .list-group-item {
+    border-left: none;
+    border-right: none;
+    padding: 15px 10px;
+}
+
+.outlook-view .elements-list .list-group-item:first-child {
+    border-left: none;
+    border-right: none;
+    border-top: none !important;
+}
+
+.outlook-view .text-muted {
+    color: #888888;
+}
+
+.outlook-view .m-t-xs {
+    margin-top: 5px;
+}
+
+.outlook-view .m-b-none {
+    margin-bottom: 0;
+}
+
+.outlook-view .list-group-item a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.elements-list a {
+    color: rgb(103, 106, 108);
+}
+
+.elements-list .list-group-item.active, .elements-list .list-group-item:hover {
+    background: #f3f3f4;
+    color: inherit;
+    border-color: #e7eaec;
+    /* border-bottom: 1px solid #e7eaec; */
+    /* border-top: 1px solid #e7eaec; */
+    border-radius: 0;
+}
+
+.full-height {
+    height: 100%;
+    color: #676a6c;
+}
+
+.border-left {
+    border-left: 1px solid #e7eaec;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+.element-detail-box {
+    padding: 15px;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.text-muted {
+    color: #888888;
+}
+
+.outlook-view h1 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+
+
+.outlook-view .btn-group-xs>.btn, .btn-xs {
+    padding: 0px 5px;
+    font-size: 16px;
+}
+
+.outlook-view .ibox {
+    clear: both;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.outlook-view .ibox-content {
+    clear: both;
+}
+
+.outlook-view .ibox-content {
+    background-color: #ffffff;
+    color: inherit;
+    /*padding: 15px 20px 20px 20px;*/
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+}
+
+.chat-element {
+    padding-bottom: 15px;
+}
+
+.chat-element, .chat-element .media {
+    margin-top: 15px;
+}
+
+.chat-element, .media-body {
+    overflow: hidden;
+}
+
+.chat-activity-list .chat-element {
+    border-bottom: 1px solid #e7eaec;
+    position: relative;
+}
+
+.chat-element:first-child {
+    margin-top: 0;
+}
+
+.chat-element > .pull-left {
+    margin-right: 10px;
+}
+
+.chat-element img.img-circle, .dropdown-messages-box img.img-circle {
+    width: 38px;
+    height: 38px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.chat-element, .media-body {
+    overflow: hidden;
+}
+
+.media-body {
+    display: block;
+    width: auto;
+}
+
+.sidebard-panel .feed-element, .media-body, .sidebard-panel p {
+    font-size: 12px;
+}
+
+.feed-element, .media-body {
+    overflow: hidden;
+}
+
+.comment-attachment{
+    font-size: 18px;
+    margin: 0px 10px;
+    margin-right: 15px;
+}
+
+.comment-attachment .label-warning{
+    top: 72px;
+    right: 32px;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.comment-assoc{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.comment-assoc .label-warning{
+    font-size: 12px;
+    top: 72px;
+    right: 1px;
+    padding: 2px;
+}
+
+.outlook-view .btn-more{
+    padding: 3px 6px;
+    font-size: 12px;
+    background-color: #1c84c6;
+    border-color: #1c84c6;
+    color: #FFFFFF;
+}
+
+/* outlook view css code end here */
+
+#activity-center {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    z-index: 100;
+}
+
+#activity-center .badge {
+    position: absolute;
+    top: -3px;
+    right: -4px;
+}
+
+.label-warning, .badge-warning {
+    /*background-color: #f8ac59;*/
+    background-color: #777;
+    color: #FFFFFF;
+}
+
+.open-small-chat {
+    height: 38px;
+    /* width: 38px; */
+    display: block;
+    /*background: #1ab394;*/
+    background: #3c8dbc;
+    padding: 9px 8px;
+    text-align: center;
+    color: #fff;
+    /* border-radius: 50%; */
+}
+
+.file-box {
+    padding: 0;
+    border: 1px solid #e7eaec;
+}
+
+
+.file-imitation {
+    text-align: center;
+    /*padding: 90px 0;*/
+    background-color: #f8f8f9;
+    color: #bebec3;
+    font-weight: 600;
+}
+
+.file-imitation img{
+    width: 100%;
+    height: 200px;
+}
+
+.file-desc {
+    /*padding: 20px;*/
+    padding: 15px 10px;
+    position: relative;
+    background-color: rgb(243, 243, 244);
+}
+
+.file-size {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    /*background-color: #1ab394;*/
+    background-color: #337ab7;
+    padding: 6px 12px;
+    position: absolute;
+    top: -32px;
+    right: 0;
+}
+
+.file-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #676a6c;
+    display: block;
+    margin: 2px 0 5px 0;
+    max-width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+}
+
+.file-type {
+    font-size: 16px;
+    font-weight: 600;
+    color: #676a6c;
+}
+
+.file-assoc {
+    font-size: 16px;
+    font-weight: 600;
+    color: #676a6c;
+    margin-right: 10px;
+}
+
+.view-thumb .btn-primary.btn-outline {
+    color: #1ab394;
+}
+
+.view-thumb .row .col-md-3:first-child {
+    padding: 0px;
+}
+
+.view-thumb .m-t-xs {
+    margin-top: 5px;
+    clear: both;
+}
+
+.view-thumb .m-t {
+    padding-top: 10px;
+    clear: both;
+}
+
+.action-working-process .table-responsive{
+    width: 66.66666667%;
+    float: left;
+    background: #fff;
+}
+
+.action-perform-container {
+    padding: 0px;
+    display: none;
+}
+
+.action-perform-container .ibox-tools a{
+    font-size: 13px;
+}
+
+.action-working-process .action-perform-container{
+    display: block;   
+}
+
+.comment-options{
+    margin-bottom: 5px;
+    float: left;
+    width:  100%;
+}
+
+.form-wo-margin .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.action-perform-container .action-container {
+    padding: 10px;
+    float: left;
+    width: 100%;
+    padding-right: 0px;
+}
+
+.action-perform-container .ibox {
+    background: #fff;
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+.action-perform-container .box {
+    margin-bottom: 10px;
+}
+
+.comment-options .btn-group {
+    margin-left: 30px;
+}
+
+.comment-options .btn-group:first-child {
+    margin-left: 0px;
+}
+
+#link-file-container .folder-view {
+    margin-top: 0px;
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Adoddle: Performance Test</title>
+        <meta name="description" content="">
+        
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-treeview.css" rel="stylesheet">
+
+        <!-- MetisMenu CSS -->
+        <!--link href="css/vendor/metisMenu.min.css" rel="stylesheet"-->
+
+        <!-- Timeline CSS -->
+        <!--link href="css/vendor/timeline.css" rel="stylesheet"-->
+
+        <!-- Custom CSS -->
+        <link href="css/vendor/sb-admin-2.css" rel="stylesheet">
+
+        <!-- Morris Charts CSS -->
+        <!--link href="css/vendor/morris.css" rel="stylesheet"-->
+
+        <!-- Custom Fonts -->
+        <link href="css/vendor/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <style type="text/css" id="treeview5-style"> 
+            .treeview .list-group-item{
+                cursor: pointer;    
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                font-size: 12px;
+            }
+            .treeview span.indent{margin-left:10px;margin-right:10px}
+            .treeview span.icon{width:12px;margin-right:5px}
+            .treeview .node-disabled{color:silver;cursor:not-allowed}
+            .node-treeview5{color:#428bca;}
+            .node-treeview5:not(.node-disabled):hover{background-color:#F5F5F5;} 
+        </style>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        
+
+    </head>
+    <body>
+
+        <div id="form-view-container">
+
+        </div>
+
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        
+
+        <script type="text/javascript">
+            
+
+            var globalBasedDomain = "https://adoddleak.asite.com";
+            var paramObj = {
+              "action_id": 115,
+              "currentPageNo": 1,
+              "commId": "8077089$$Yv7ulT",
+              "projectId": "2108389$$5ZYzGK",
+              "msgId": "9386036$$gRNFYX",
+              "folderId": "0$$i2HqVQ",
+              "formNum": "302",
+              "form_type_id": "7035851$$UnAkdP",
+              "callerApp": "10",
+              "viewAlwaysFormAssociation": "",
+              "assocParentProjectId": "2108389$$5ZYzGK"
+            };
+
+            
+            /*$.getJSON('data.json', function(data){
+                console.time("test");
+                var newcolum = data[0],
+                    basicHtml, 
+                    sHtml;
+
+                sHtml = newcolum.html || " ";
+                sHtml = sHtml.replace("xsl/infojet_blankpage.jsp", "/adoddle/xsl/infojet_blankpage.jsp");
+                sHTML = sHtml.replace("dmsa/xsl/xdoc.jsp", "adoddle/xsl/xdoc.jsp");
+                sHtml = '<div style="float: left;" class="formScrollWrap">' + sHtml + "</div>";
+                //$($msgHeaderH4[0].nextSibling).html(sHtml.replace("<!--#Script##Script#-->", ""));
+
+                try{
+                    $("#form-view-container").html(sHtml.replace("<!--#Script##Script#-->", ""));
+                }catch(e){
+
+                }
+                
+                console.timeEnd("test");
+            });*/
+
+            $.getJSON('data.json', function(data){
+                console.time("test_change_again");
+                data[0].html.replace("xsl/infojet_blankpage.jsp", "/adoddle/xsl/infojet_blankpage.jsp");
+                data[0].html.replace("dmsa/xsl/xdoc.jsp", "adoddle/xsl/xdoc.jsp");
+                data[0].html = '<div style="float: left;" class="formScrollWrap">' + data[0].html + "</div>";
+                //$($msgHeaderH4[0].nextSibling).html(sHtml.replace("<!--#Script##Script#-->", ""));
+
+                //$("#form-view-container").html(sHtml.replace("<!--#Script##Script#-->", ""));
+                try{
+                    $("#form-view-container")[0].innerHTML = data[0].html.replace("<!--#Script##Script#-->", "");
+                    //$("#form-view-container")[0].innerHTML = data[0].html;
+                }catch(e){
+
+                }
+                console.timeEnd("test_change_again");
+            });
+        </script>
+    </body>
+</html>

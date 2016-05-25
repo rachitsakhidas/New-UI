@@ -1,0 +1,568 @@
+#header .brand-logo {
+  background: url(/images/dps-logo.png) no-repeat;
+  width: 146px;
+  max-width: 146px;
+}
+#header .search-query {
+  background-color: #fff;
+  border-color: #BBBBBB;
+  color: #555;
+}
+#header input::-webkit-input-placeholder {
+  color: #555;
+}
+#header #search_btn {
+  background-color: #fff;
+  border-color: #BBBBBB;
+}
+#header #search_btn span {
+  background: url(/images/icons/icon_grey_search-branding.png);
+}
+#header #header-apps-link {
+  margin: 0px 3px 0px 3px;
+}
+#header #user-loggedin .check-list-item a.activeMyAccount:hover {
+  color: #fff;
+  background: #7A9A01 !important;
+}
+#header a.activeMyAccount {
+  color: #fff;
+  background: #7A9A01 !important;
+}
+#header #header-branding-info-link {
+  padding: 0px 0px 0px 3px;
+}
+
+#my-nav > .nav > li > a:hover {
+  background: url("/images/nav-hover-branding-dps.png") no-repeat scroll center top transparent;
+  color: #fff;
+}
+#my-nav > .nav > li > a:focus {
+  background: url("/images/nav-hover-branding-dps.png") no-repeat scroll center top transparent;
+  color: #fff;
+}
+#my-nav .nav > li > a {
+  color: #000;
+}
+#my-nav .nav li.active a {
+  color: #fff;
+}
+#my-nav .nav li.active {
+  background: url("/images/nav-hover-branding-dps.png") no-repeat scroll center top transparent;
+}
+
+#sectionWelcome .dashboard-box-top {
+  background: #7A9A01;
+}
+#sectionWelcome .dashboard-box-top .widgetHeader span {
+  color: #fff;
+}
+#sectionWelcome .dashboard-box-top .toggle-dash {
+  background: url(/images/icons/icon_dash_minus_gs.gif) no-repeat;
+}
+#sectionWelcome .dashboard-box-top .dash-toggle {
+  background: url(/images/icons/icon_dash_plus_gs.gif) no-repeat;
+}
+#sectionWelcome .dashboard-box-top span {
+  color: #fff;
+}
+#sectionWelcome .dashboard-box-lower .jqplot-point-label {
+  background-color: #fff;
+  color: #666666;
+}
+#sectionWelcome .dashboard-box-lower .jqplot-yaxis .jqplot-yaxis-tick {
+  background-color: #fff;
+  color: #666666;
+}
+#sectionWelcome .dashboard-box-lower .jqplot-xaxis .jqplot-xaxis-tick {
+  background-color: #fff;
+  color: #666666;
+}
+#sectionWelcome .dashboard-box-lower .favFolderRows .folder-icon {
+  background: url(/images/icons/folder-closed32x32.png);
+  background-size: contain;
+}
+#sectionWelcome .dashboard-box-lower .favCommsRows .form-32 {
+  background: url(/images/icons/form_32.png);
+}
+#sectionWelcome .dashboard-box-lower .showMoreContainer .prev.disabled {
+  background: #fff;
+}
+#sectionWelcome .dashboard-box-lower .showMoreContainer .next.disabled {
+  background: #fff;
+}
+#sectionWelcome .dashboard-box-lower .showMoreContainer .prev-img {
+  background: url(/images/icons/previous.png);
+}
+#sectionWelcome .dashboard-box-lower .showMoreContainer .next-img {
+  background: url(/images/icons/next.png);
+}
+
+.dashboard-drop-button {
+  background: #7A9A01;
+  border-color: #fff;
+  color: #fff;
+}
+
+.widget-add-container {
+  background: #7A9A01;
+}
+
+#myModal-widget-icons .widgetListHead {
+  background-color: #7A9A01;
+  color: white;
+}
+#myModal-widget-icons .widget-cat-count {
+  background-color: #7A9A01;
+  color: white;
+}
+#myModal-widget-icons .widget-category {
+  color: #7A9A01;
+}
+#myModal-widget-icons .widget-category:hover {
+  background-color: #7A9A01;
+  color: white;
+}
+#myModal-widget-icons .widget-category-selected {
+  color: #7A9A01;
+}
+
+.fullwidth-box-top {
+  background-color: #7A9A01;
+}
+.fullwidth-box-top .optshow {
+  background: #7A9A01;
+  border-color: #fff;
+  color: #fff;
+}
+.fullwidth-box-top .listing-records-details {
+  color: #fff;
+}
+.fullwidth-box-top .manage-selects span {
+  color: #fff;
+}
+.fullwidth-box-top .customizeParent {
+  background: #7A9A01;
+  border-color: #fff;
+}
+.fullwidth-box-top .customizeParent span {
+  color: #fff;
+}
+.fullwidth-box-top .customizeParent .customizeArrow .moveDown {
+  border-top-color: #000;
+}
+.fullwidth-box-top .customizeParent .customizeArrow .moveUp {
+  border-bottom-color: #000;
+}
+
+.redselect {
+  background: #fff;
+  color: #000;
+}
+
+.loading > span.progress-span {
+  background: url(/images/dps.gif) no-repeat scroll 0 0/cover transparent;
+}
+
+.manage-selects a.view-list {
+  background: url(/images/icons/grid_layout_1_new.png);
+}
+.manage-selects a.view-grid {
+  background: url(/images/icons/grid_layout_2_new.png);
+}
+
+.restored .maximise-minimise {
+  background: url(/images/icons/maximize_window.png);
+}
+
+.maximized .maximise-minimise {
+  background: url(/images/icons/restore_window.png);
+}
+
+#folderTree span.closeFolder, #folderTreeAssocFile span.closeFolder, #treeListing span.closeFolder {
+  background: url(/images/files/folder-closed.png) no-repeat scroll 0 -13px transparent;
+}
+#folderTree span.closeFolder.fav, #folderTreeAssocFile span.closeFolder.fav, #treeListing span.closeFolder.fav {
+  background: url(/images/files/folder-closed.png) no-repeat scroll transparent;
+}
+#folderTree span.openFolder, #folderTreeAssocFile span.openFolder, #treeListing span.openFolder {
+  background: url(/images/files/folder-open.png) no-repeat scroll 0 -13px transparent;
+}
+#folderTree span.openFolder.fav, #folderTreeAssocFile span.openFolder.fav, #treeListing span.openFolder.fav {
+  background: url(/images/files/folder-open.png) no-repeat scroll transparent;
+}
+#folderTree .tree-row:hover, #folderTreeAssocFile .tree-row:hover, #treeListing .tree-row:hover {
+  background-color: #F0F6FE;
+  background: url(/images/icons/middle-bg.png) repeat scroll 0 0 !important;
+}
+#folderTree .tree-row.selected, #folderTreeAssocFile .tree-row.selected, #treeListing .tree-row.selected {
+  background-color: #E6E6E6;
+}
+
+.fullwidth-box-top .btn-danger[disabled] {
+  background: #7A9A01;
+}
+.fullwidth-box-top .btn-danger {
+  background: #7A9A01;
+}
+.fullwidth-box-top .configurationContainer .btn-danger {
+  background: #7A9A01;
+}
+.fullwidth-box-top h2 {
+  color: #fff;
+}
+
+.width-padded .btn-disabled {
+  background: #fff;
+}
+.width-padded .btn-inverse {
+  background-image: -moz-linear-gradient(top, #7A9A01, #7A9A01);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7A9A01), to(#7A9A01));
+  background-image: -webkit-linear-gradient(top, #7A9A01, #7A9A01);
+  background-image: -o-linear-gradient(top, #7A9A01, #7A9A01);
+  background-image: linear-gradient(to bottom, #7A9A01, #7A9A01);
+  background-color: #7A9A01;
+}
+
+.boxgrid .btn-danger {
+  background: #7A9A01;
+}
+
+.no-records-msg-text {
+  background: #7A9A01;
+  border-color: #7A9A01;
+}
+
+.myaccount-right .btn-inverse {
+  background: #7A9A01;
+}
+
+#saveMyAccount, #acceptTermsOfUse, #saveChangePassword {
+  background: #7A9A01;
+}
+
+.reportingLabel-dashboard span:before {
+  content: "DPS ";
+}
+
+.dropdown-menu.filter-dropdown-menu > li > a:hover {
+  background-color: #7A9A01;
+}
+
+.mdlBody .ui-accordion .ui-accordion-header {
+  background-color: #7A9A01;
+  color: #fff;
+}
+
+.mdlBody .ui-state-active {
+  border-color: #7A9A01 !important;
+}
+
+.modal-header {
+  background: #7A9A01;
+}
+
+.modal-scrollable .btn-danger[disabled] {
+  background: #7A9A01;
+}
+.modal-scrollable .btn-danger {
+  background: #7A9A01;
+}
+
+button#btnSaveForm, button#btnSaveDraft {
+  background: #7A9A01;
+}
+
+#left-nav-blocks a#sidenav-welcome {
+  background: url(/images/icons/dps/sidenav_welcome_white.png) no-repeat scroll 0 0 transparent;
+}
+#left-nav-blocks a#sidenav-welcome:hover {
+  background: url(/images/icons/dps/sidenav_welcome.png) no-repeat scroll 0 0 transparent;
+}
+#left-nav-blocks a#sidenav-welcome.active {
+  background: url(/images/icons/dps/sidenav_welcome.png) no-repeat scroll 0 0 transparent;
+}
+#left-nav-blocks a#sidenav-myaccount {
+  background: url(/images/icons/dps/sidenav_myaccount.png) no-repeat scroll 0 0 transparent;
+}
+#left-nav-blocks a#sidenav-myaccount:hover {
+  background: url(/images/icons/dps/sidenav_myaccount.png) no-repeat scroll 0 0 transparent;
+}
+#left-nav-blocks a#sidenav-myaccount.active {
+  background: url(/images/icons/dps/sidenav_myaccount.png) no-repeat scroll 0 0 transparent;
+}
+
+a.sidenav-number {
+  background: url(/images/icons/dps/leftnav_off.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-user-preference-welcome {
+  background: url(/images/icons/dps/sidenav_welcome_white.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-upload-preference {
+  background: url(/images/icons/dps/sidenav_upload_preference.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-download-preference {
+  background: url(/images/icons/dps/sidenav_download_preference.png) no-repeat scroll 0 0 transparent;
+}
+
+a#modelnav-history {
+  background: url(/images/icons/dps/filenav_status.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-email-notifications {
+  background: url(/images/icons/dps/sidenav_email_notifications.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-contact-all {
+  background: url(/images/icons/dps/sidenav_contact_all.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-contact-public {
+  background: url(/images/icons/dps/sidenav_contact_public.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-manageRole-main {
+  background: url(/images/icons/dps/sidenav_manage_roles.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-role-privileges {
+  background: url(/images/icons/dps/sidenav_role_priviledges.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-role-form-permissions {
+  background: url(/images/icons/dps/sidenav_role_form_permissions.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-role-history {
+  background: url(/images/icons/dps/filenav_status.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-contact-project {
+  background: url(/images/icons/dps/sidenav_contact_project.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-invite-users {
+  background: url(/images/icons/dps/sidenav_invite_users.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-users-status {
+  background: url(/images/icons/dps/sidenav_invite_users_status.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-commu-docMailBox {
+  background: url(/images/icons/dps/documentMailbox.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-commu-formMailBox {
+  background: url(/images/icons/dps/formMailbox.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-catalog-basket {
+  background: url(/images/icons/dps/leftnav_off.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-catalog-info {
+  background: url(/images/icons/dps/filenav_info.png) no-repeat scroll 0 0 transparent;
+}
+
+a#invoice-nav-info {
+  background: url(/images/icons/dps/filenav_info.png) no-repeat scroll 0 0 transparent;
+}
+
+a#invoice-nav-history {
+  background: url(/images/icons/dps/filenav_status.png) no-repeat scroll 0 0 transparent;
+}
+
+a#filenav-comments {
+  background: url(/images/icons/dps/filenav_comments.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-reportMain {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-legacyReport {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-schedulingReport {
+  background: url(/images/icons/dps/sidenav_exchange_messages.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-search-adoddle {
+  background: url(/images/icons/dps/leftnav_off.png) no-repeat scroll 0 0 transparent;
+}
+
+a#lhBtnAllAdminOption {
+  background: url(/images/icons/dps/sidenav_admin_all.png) no-repeat scroll 0 0 transparent;
+}
+
+a#lhBtnAdminFetchAttrOption {
+  background: url(/images/icons/dps/leftnav_off.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-search-adoddle {
+  background: url(/images/icons/dps/leftnav_off.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-search-documents {
+  background: url(/images/icons/dps/leftnav_off.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-search-comment {
+  background: url(/images/icons/dps/leftnav_off.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-search-models {
+  background: url(/images/icons/dps/leftnav_off.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-search-procurement {
+  background: url(/images/icons/dps/leftnav_off.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-commu-all {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-commu-createNew {
+  background: url(/images/icons/dps/sidenav_apps_createforms.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-apps-listall {
+  background: url(/images/icons/dps/sidenav_apps_listall.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-projectadd {
+  background: url(/images/icons/dps/filesnav_add-folder.png) no-repeat scroll 0 0 transparent;
+}
+a#sidenav-projectadd:hover {
+  background: url(/images/icons/dps/sidenav_projectadd_on.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-files-manage {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-discuss-all {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#leftAddModel {
+  background: url(/images/icons/dps/add_model.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-exchange-messages {
+  background: url(/images/icons/dps/sidenav_exchange_messages.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-exchange-catalog {
+  background: url(/images/icons/dps/sidenav_exchange_catalog.png) no-repeat scroll 0 0 transparent;
+}
+
+a.sidenav-company {
+  background: url(/images/icons/dps/sidenav_companies.png) no-repeat scroll 0 0 transparent;
+}
+
+a.sidenav-mysupp {
+  background: url(/images/icons/dps/sidenav_my_suppliers.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-directory-catalog {
+  background: url(/images/icons/dps/sidenav_exchange_catalog.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-apps-Featured {
+  background: url(/images/icons/dps/sidenav_appsLibrary_featured.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-apps-All {
+  background: url(/images/icons/dps/sidenav_appsLibrary_all.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-apps-Private {
+  background: url(/images/icons/dps/sidenav_appsLibrary_private.png) no-repeat scroll 0 0 transparent;
+}
+
+a#newfilenav-info {
+  background: url(/images/icons/dps/filenav_info.png) no-repeat scroll 0 0 transparent;
+}
+
+a#filenav-comms {
+  background: url(/images/icons/dps/filenav_comms.png) no-repeat scroll 0 0 transparent;
+}
+
+a#filenav-history {
+  background: url(/images/icons/dps/filenav_status.png) no-repeat scroll 0 0 transparent;
+}
+
+a#formnav-details {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#formnav-association {
+  background: url(/images/icons/dps/filenav_association.png) no-repeat scroll 0 0 transparent;
+}
+
+a#formnav-history {
+  background: url(/images/icons/dps/filenav_status.png) no-repeat scroll 0 0 transparent;
+}
+
+a#leftNavModelInfo {
+  background: url(/images/icons/dps/filenav_info.png) no-repeat scroll 0 0 transparent;
+}
+
+a#modelnav-comms {
+  background: url(/images/icons/dps/filenav_comms.png) no-repeat scroll 0 0 transparent;
+}
+
+a#filenav-comms {
+  background: url(/images/icons/dps/filenav_comms.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-help-videos {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-help-adoddle {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-help-elearning {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-help-onlinehelp {
+  background: url(/images/icons/dps/sidenav_files_manage.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-workflow-instances, a#filenav-workflow {
+  background: url(/images/icons/dps/sidenav-workflow-instances.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-wofkflow-models {
+  background: url(/images/icons/dps/sidenav-wofkflow-models.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-workflow-rules {
+  background: url(/images/icons/dps/sidenav-workflow-rules.png) no-repeat scroll 0 0 transparent;
+}
+
+a#sidenav-workflow-action {
+  background: url(/images/icons/dps/sidenav-workflow-action.png) no-repeat scroll 0 0 transparent;
+}
+
+a#lhBtnmanagenotices {
+  background: url(/images/icons/dps/sidenav_notice.png) no-repeat scroll 0 0 transparent;
+}
+
+a#filenav-association {
+  background: url(/images/icons/dps/filenav_association.png) no-repeat scroll 0 0 transparent;
+}
+
+#footer {
+  background: #7A9A01;
+}
